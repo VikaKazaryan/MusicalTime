@@ -1,0 +1,402 @@
+html {
+	box-sizing: border-box;
+}
+*, *::before, *::after{
+	box-sizing: inherit;
+}
+img{
+	display: block;
+	max-width: 100%;
+}
+h1, h2, h3, h4, h5, h6, p {
+	padding: 0;
+	margin: 0;
+}
+body{
+	margin: 0;
+	font-family: "Inter", sans-serif;
+	font-weight: 400;
+}
+.nav {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	height: 90px;
+	background-color: #D9D9D9;
+}
+.nav_flex {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+  flex-wrap: wrap;
+	margin-top: 25px;
+}
+.buttons {
+	padding-left: 475px;
+	display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.but_nav {
+	font-family: "Inter", sans-serif;
+	padding: 0px;
+	width: 95px;
+	height: 30px;
+	background-color: #C876FF;
+	color: #fff;
+	border-radius: 5px;
+	border: none;
+	margin-right: 15px;
+	margin-top: 15px;
+	font-weight: 400;
+	font-size: 17px;
+	transition: 0.3s;
+}
+.but_nav:last-child {
+	margin-right: 0px;
+}
+.but_nav:hover {
+	background-color: #20125B;
+	font-weight: 500;
+	font-size: 18px;
+}
+.but_nav:active {
+	background-color: #F6B3E5;
+}
+.shapka {
+	display: flex;
+	flex-direction: column;
+  align-items: center;
+	background-image: url(./foto/shapka_flex.png);
+	height: 400px;
+	background-repeat: no-repeat;
+  background-size: cover;
+}
+.h1_shapka {
+	font-size: 50px;
+	font-weight: 500;
+	color: #F6B3E5;
+	text-align: center;
+	padding-top: 138px;
+}
+.about_flex {
+	display: flex;
+	flex-direction: column;
+  align-items: center;
+	padding-top: 50px;
+}
+.con {
+	display: flex;
+	flex-direction: row;
+  flex-wrap: wrap;
+}
+.p_about {
+	font-size: 22px;
+	font-weight: 300;
+	margin-right: 20px;
+}
+.musical {
+	font-weight: 500;
+}
+.abuot_img {
+	width: 670px;
+	height: 427px;
+}
+.con_prod {
+	display: flex;
+	flex-direction: column;
+  align-items: center;
+	margin-top: 50px;
+}
+.h2_hiti {
+	font-weight: 700;
+	font-size: 26px;
+}
+.kartochki_flex {
+	display: flex;
+	flex-wrap: wrap;
+  flex-direction: row;
+	margin-top: 30px;
+	margin-bottom: 91px;
+}
+.kartochkA {
+	width: 210px;
+	height: 328px;
+	display: flex;
+	flex-direction: column;
+  align-items: center;
+	background-color: #D9D9D9;
+	border-radius: 10px;
+	margin-right: 20px;
+	transition: 0.3s;
+}
+.kartochkA:last-child {
+	margin-right: 0px;
+}
+.kartochkA:hover {
+	background-color: #F6B3E5;
+}
+.img_kartochka {
+	margin-top: 14px;
+}
+.nazvanie {
+	font-weight: 400;
+	font-size: 14px;
+	text-align: center;
+	margin-top: 7px;
+}
+.cena {
+	font-weight: 900;
+	font-size: 23px;
+	color: #C876FF;
+	margin-top: 4px;
+}
+.korzina {
+	width: 185px;
+	height: 25px;
+	background-color: #7331F2;
+	color: #fff;
+	font-weight: 700;
+	font-size: 16px;
+	border: none;
+	border-radius: 10px;
+	font-family: "Inter", sans-serif;
+	margin-top: 5px;
+	transition: 0.3s;
+}
+.korzina:hover {
+	background-color: #fff;
+	color: #7331F2;
+}
+.p_text {
+	text-align: center;
+	margin-bottom: 91px;
+	font-weight: 300;
+	font-size: 22px;
+}
+.footer {
+	width: 100%;
+	height: 200px;
+	background-color: #D9D9D9;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.con_footer {
+	display: flex;
+	flex-direction: row;
+  flex-wrap: wrap;
+	margin-top: 41px;
+}
+.but_footer {
+	display: flex;
+	flex-direction: column;
+}
+.logo2 {
+	margin-right: 177px;
+	margin-left: 274px;
+}
+.sotial {
+	display: flex;
+}
+.ico {
+	width: 48px;
+	height: 48px;
+	margin-right: 33px;
+}
+.con_grid {
+	display: flex;
+	flex-direction: column;
+  align-items: center;
+	margin-top: 50px;
+	margin-bottom: 69px;
+	flex-wrap: wrap;
+}
+.grid {
+	display: grid;
+	grid-template-columns: repeat(5, 2fr);
+	grid-row-gap: 20px;
+}
+.p_grid {
+	text-align: center;
+	margin-bottom: 68px;
+	font-weight: 300;
+	font-size: 18px;
+}
+.h1_boot {
+	text-align: center;
+	font-weight: 500;
+	font-size: 55px;
+	color: #F6B3E5;
+}
+.h3_boot {
+	font-size: 32px;
+	font-weight: 400;
+	margin-bottom: 25px;
+}
+.forma_vopr {
+	display: flex;
+}
+.col1_1 {
+	padding-right: 30px;
+}
+.label {
+	font-weight: 400;
+	font-size: 15px;
+	color: #F6B3E5;
+}
+.input1 {
+	width: 325px;
+	height: 56px;
+	background-color: #D9D9D9;
+	border: none;
+	border-radius: 10px;
+	transition: 0.3s;
+}
+.input1:hover {
+	border: 2px solid #C876FF;
+}
+.input1:focus {
+	outline: none;
+	border: 2px solid #7331F2;
+}
+.karta {
+	width: 508px;
+	height: 264px;
+	box-shadow: 4px 0px 15px 0px #666666;
+	border-radius: 10px;
+	background-color: #D6D4D4;
+}
+.label2 {
+	font-weight: 500;
+	font-size: 18px;
+	padding-left: 28px;
+	margin-top: 77px;
+}
+.inp_karta_1 {
+	width: 451px;
+	height: 50px;
+	border-radius: 10px;
+	border: none;
+	margin-left: 28px;
+	transition: 0.3s;
+}
+.inp_karta_1:hover {
+	border: 2px solid #A5A5A5;
+}
+.inp_karta_2 {
+	transition: 0.3s;
+	width: 140px;
+	height: 50px;
+	border-radius: 10px;
+	border: none;
+	margin-left: 28px;
+	display: flex;
+}
+.inp_karta_2:hover {
+	border: 2px solid #A5A5A5;
+}
+.karta2 {
+	width: 150px;
+	height: 264px;
+	background-color: #EAEAEA;
+	border-radius: 10px;
+	padding-top: 39px;
+	z-index: -1;
+}
+.poloska {
+	width: 150px;
+	height: 46px;
+	background-color: #D9D9D9;
+	margin-bottom: 46px;
+}
+.label3 {
+	font-weight: 400;
+	font-size: 16px;
+	color: #666666;
+	padding-left: 14px;
+}
+.inp_karta_3 {
+	width: 87px;
+	height: 40px;
+	border-radius: 10px;
+	border: none;
+	margin-left: 14px;
+	margin-top: 6px;
+	transition: 0.3s;
+}
+.inp_karta_3:hover {
+	border: 2px solid #A5A5A5;
+}
+.p_karta {
+	font-weight: 400;
+	font-size: 12px;
+	color: #666666;
+	padding-left: 14px;
+	padding-top: 6px;
+}
+.all_karta {
+	display: flex;
+}
+.col2 {
+	margin-left: 20px;
+}
+.btn {
+	width: 210px;
+	height: 53px;
+	background-color: #7331F2;
+	color: #fff;
+	border-radius: 10px;
+	font-weight: 600;
+	font-size: 25px;
+	line-height: 0px;
+	padding-block: 0px;
+	padding-inline: 0px;
+	border-width: 0px;
+	transition: 0.3s;
+	margin-bottom: 174px;
+}
+.btn-primary:hover {
+	background-color: #F6B3E5;
+}
+.btn-primary:focus {
+	background-color: #20125B;
+	border: none;
+}
+.oplata {
+	width: 900px;
+	height: 450px;
+	background-color: #E2E2E2;
+	border: none;
+	opacity: 0.9;
+}
+.close {
+	position: absolute;
+	right: 25px;
+	top: 25px;
+	font-size: 45px;
+	font-weight: 500;
+	color: #C876FF;
+	border: none;
+	background: none;
+	transition: 0.3s;
+}
+.h1_opl {
+	text-align: center;
+	font-size: 40px;
+	font-weight: 500;
+	color: #7331F2;
+	padding-top: 146px;
+}
+.h2_opl {
+	text-align: center;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 500;
+	color: #535353;
+	padding-top: 31px;
+}
+.close:hover {
+	color: #7331F2;
+}
