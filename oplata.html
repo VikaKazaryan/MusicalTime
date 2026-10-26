@@ -153,32 +153,22 @@
 		</footer>
 		<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 <script>
-  // 1. Инициализация
   emailjs.init("yayO1v6lsFVU-NChW"); 
-
   const form = document.getElementById('payment-form');
-
   if (!form) {
-      // Если форма не найдена по ID, мы об этом узнаем!
       alert("ОШИБКА: Скрипт не видит форму. Проверьте, есть ли у тега <form> id='payment-form'");
   } else {
       form.addEventListener('submit', function(event) {
         event.preventDefault(); 
-        
-        // Показываем, что скрипт начал работу
         console.log("Кнопка нажата, начинаем отправку...");
-
-        // 2. Отправка
         emailjs.sendForm('service_cv0zt8k', 'template_46nt10e', this)
           .then(() => {
-            // Если УСПЕХ
             console.log("Письмо успешно отправлено!");
             document.getElementById('modal').showModal(); 
             this.reset(); 
           }, (error) => {
-            // Если ОШИБКА
             console.error("ОШИБКА EMAILJS:", error);
-            alert('❌ Ошибка отправки! Причина: ' + JSON.stringify(error));
+            alert('Ошибка отправки! Причина: ' + JSON.stringify(error));
           });
       });
   }
